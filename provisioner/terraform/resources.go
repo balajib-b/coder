@@ -29,6 +29,7 @@ type agentAttributes struct {
 	MOTDFile                    string            `mapstructure:"motd_file"`
 	LoginBeforeReady            bool              `mapstructure:"login_before_ready"`
 	StartupScriptTimeoutSeconds int32             `mapstructure:"startup_script_timeout"`
+	ShutdownScript              string            `mapstructure:"shutdown_script"`
 }
 
 // A mapping of attributes on the "coder_app" resource.
@@ -145,6 +146,7 @@ func ConvertResourcesAndParameters(modules []*tfjson.StateModule, rawGraph strin
 				MotdFile:                    attrs.MOTDFile,
 				LoginBeforeReady:            loginBeforeReady,
 				StartupScriptTimeoutSeconds: attrs.StartupScriptTimeoutSeconds,
+				ShutdownScript:              attrs.ShutdownScript,
 			}
 			switch attrs.Auth {
 			case "token":
