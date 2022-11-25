@@ -175,6 +175,7 @@
   },
   "git_auth_configs": 0,
   "motd_file": "string",
+  "shutdown_script": "string",
   "startup_script": "string",
   "startup_script_timeout": 0,
   "vscode_port_proxy_uri": "string"
@@ -192,6 +193,7 @@
 | » `[any property]`       | string                                                  | false    |              |                                                                                                                                                            |
 | `git_auth_configs`       | integer                                                 | false    |              | Git auth configs stores the number of Git configurations the Coder deployment has. If this number is >0, we set up special configuration in the workspace. |
 | `motd_file`              | string                                                  | false    |              |                                                                                                                                                            |
+| `shutdown_script`        | string                                                  | false    |              |                                                                                                                                                            |
 | `startup_script`         | string                                                  | false    |              |                                                                                                                                                            |
 | `startup_script_timeout` | integer                                                 | false    |              |                                                                                                                                                            |
 | `vscode_port_proxy_uri`  | string                                                  | false    |              |                                                                                                                                                            |
@@ -5087,6 +5089,7 @@ Parameter represents a set value for the scope.
             "name": "string",
             "operating_system": "string",
             "resource_id": "4d5215ed-38bb-48ed-879a-fdb9ca58522f",
+            "shutdown_script": "string",
             "startup_script": "string",
             "startup_script_timeout_seconds": 0,
             "status": "connecting",
@@ -5210,6 +5213,7 @@ Parameter represents a set value for the scope.
   "name": "string",
   "operating_system": "string",
   "resource_id": "4d5215ed-38bb-48ed-879a-fdb9ca58522f",
+  "shutdown_script": "string",
   "startup_script": "string",
   "startup_script_timeout_seconds": 0,
   "status": "connecting",
@@ -5243,6 +5247,7 @@ Parameter represents a set value for the scope.
 | `name`                           | string                                                               | false    |              |                                                                                                                                                                                                            |
 | `operating_system`               | string                                                               | false    |              |                                                                                                                                                                                                            |
 | `resource_id`                    | string                                                               | false    |              |                                                                                                                                                                                                            |
+| `shutdown_script`                | string                                                               | false    |              |                                                                                                                                                                                                            |
 | `startup_script`                 | string                                                               | false    |              |                                                                                                                                                                                                            |
 | `startup_script_timeout_seconds` | integer                                                              | false    |              | Startup script timeout seconds is the number of seconds to wait for the startup script to complete. If the script does not complete within this time, the agent lifecycle will be marked as start_timeout. |
 | `status`                         | [codersdk.WorkspaceAgentStatus](#codersdkworkspaceagentstatus)       | false    |              |                                                                                                                                                                                                            |
@@ -5545,6 +5550,7 @@ Parameter represents a set value for the scope.
           "name": "string",
           "operating_system": "string",
           "resource_id": "4d5215ed-38bb-48ed-879a-fdb9ca58522f",
+          "shutdown_script": "string",
           "startup_script": "string",
           "startup_script_timeout_seconds": 0,
           "status": "connecting",
@@ -5714,6 +5720,7 @@ Parameter represents a set value for the scope.
       "name": "string",
       "operating_system": "string",
       "resource_id": "4d5215ed-38bb-48ed-879a-fdb9ca58522f",
+      "shutdown_script": "string",
       "startup_script": "string",
       "startup_script_timeout_seconds": 0,
       "status": "connecting",
@@ -5905,6 +5912,7 @@ Parameter represents a set value for the scope.
                 "name": "string",
                 "operating_system": "string",
                 "resource_id": "4d5215ed-38bb-48ed-879a-fdb9ca58522f",
+                "shutdown_script": "string",
                 "startup_script": "string",
                 "startup_script_timeout_seconds": 0,
                 "status": "connecting",

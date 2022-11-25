@@ -5118,6 +5118,9 @@ const docTemplate = `{
                 "motd_file": {
                     "type": "string"
                 },
+                "shutdown_script": {
+                    "type": "string"
+                },
                 "startup_script": {
                     "type": "string"
                 },
@@ -8136,6 +8139,9 @@ const docTemplate = `{
                 "resource_id": {
                     "type": "string",
                     "format": "uuid"
+                },
+                "shutdown_script": {
+                    "type": "string"
                 },
                 "startup_script": {
                     "type": "string"
