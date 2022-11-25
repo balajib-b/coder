@@ -399,8 +399,8 @@ practices:
   URL](./admin/configure.md#access-url)
 - Manually connect to the resource and check the agent logs (e.g., `kubectl exec`, `docker exec` or AWS console)
   - The Coder agent logs are typically stored in `/tmp/coder-agent.log`
-  - The Coder agent startup script logs are typically stored in
-    `/tmp/coder-startup-script.log`
+  - The Coder agent startup script logs are typically stored in `/tmp/coder-startup-script.log`
+  - The Coder agent shutdown script logs are typically stored in `/tmp/coder-shutdown-script.log`
 
 ### Agent does not become ready
 
