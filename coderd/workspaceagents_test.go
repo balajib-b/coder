@@ -1274,6 +1274,10 @@ func TestWorkspaceAgent_LifecycleState(t *testing.T) {
 			{codersdk.WorkspaceAgentLifecycleStartTimeout, false},
 			{codersdk.WorkspaceAgentLifecycleStartError, false},
 			{codersdk.WorkspaceAgentLifecycleReady, false},
+			{codersdk.WorkspaceAgentLifecycleShuttingDown, false},
+			{codersdk.WorkspaceAgentLifecycleShutdownTimeout, false},
+			{codersdk.WorkspaceAgentLifecycleShutdownError, false},
+			{codersdk.WorkspaceAgentLifecycleOff, false},
 			{codersdk.WorkspaceAgentLifecycle("nonexistent_state"), true},
 			{codersdk.WorkspaceAgentLifecycle(""), true},
 		}

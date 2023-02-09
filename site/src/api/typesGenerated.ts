@@ -1248,13 +1248,21 @@ export const ValidationMonotonicOrders: ValidationMonotonicOrder[] = [
 // From codersdk/workspaceagents.go
 export type WorkspaceAgentLifecycle =
   | "created"
+  | "off"
   | "ready"
+  | "shutdown_error"
+  | "shutdown_timeout"
+  | "shutting_down"
   | "start_error"
   | "start_timeout"
   | "starting"
 export const WorkspaceAgentLifecycles: WorkspaceAgentLifecycle[] = [
   "created",
+  "off",
   "ready",
+  "shutdown_error",
+  "shutdown_timeout",
+  "shutting_down",
   "start_error",
   "start_timeout",
   "starting",
