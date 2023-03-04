@@ -1,7 +1,7 @@
 1. Download and install one of the following system packages from [GitHub releases](https://github.com/coder/coder/releases/latest):
 
    - .deb (Debian, Ubuntu)
-   - .rpm (Fedora, CentOS, RHEL, SUSE)
+   - .rpm (Fedora, CentOS, RHEL, SUSE, Rocky Linux)
    - .apk (Alpine)
 
 1. Run Coder as a system service.
